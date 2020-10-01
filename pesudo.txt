@@ -1,0 +1,37 @@
+Retirement Calculator
+
+Variables
+    Initialize currentAge as number;
+    Initialize RetireAge as number;
+    Initialize RetirementYear as number;
+    Initialize Dif as number Calculate (currentAge-RetireAge);
+
+Input:
+    Prompt ('what is your age?') as number
+    Prompt('what age would you like to retire? ') as number
+
+Constraits :
+    Numbers, positive, non-decimal;
+    Retirement age must be greater than current age;
+
+Processing
+    STEP1 :
+        if (currentAge is empty or string or negativeNumber) :
+              Display('please inter your current age as a number');
+    STEP2 :
+        if (RetireAge is empty or string or negativeNumber):
+              Display ('please inter your retire age as a number');
+    STEP3:
+        if (currentAge is >= RetireAge):
+             Display('Retirement age can not be less than your current age');
+    STEP4:
+        if (RetireAge > currentAge):
+            dif = retire age - current age;
+            Display('you have'+ dif + 'years left until you can retire');
+            
+    STEP5:
+        ADD RetirementYear = CurrentDate + dif;
+        Display ('it's '+ CurrentDate +'so you can retire in'+ RetirementYear);
+
+
+End
